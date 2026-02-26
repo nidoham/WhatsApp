@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.nidoham.whatsapp.presentation.screen.auth.RegisterScreen
 import com.nidoham.whatsapp.ui.theme.WhatsAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -12,6 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             WhatsAppTheme {
+                RegisterScreen()
             }
         }
     }
